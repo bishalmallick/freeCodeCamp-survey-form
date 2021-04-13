@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Society Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+              <h1 id="title">Society Survey Form</h1>
+              <p id="description">Thank you for taking the time to help us with your views towards reservation.</p>
+              <p><em>All your data will be kept private and your opinions won't be made public.</em></p>
+            </div>
+
+            <div class="form-container">
+              <form id="survey-form">
+                <label id="name-label">Name</label><input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required />
+                <label id="number-label">Age</label><input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Enter your Age" required />
+                <label class="email-label">Email</label><input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+                <p>Gender</p>
+                <select id="gender" name="gender" class="form-control" required>
+                    <option disabled selected value>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="form-group">
+                  <p>Select your occupation:</p>
+                  <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select</option>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Select your caste:</p>
+                    <label><input type="radio" name="caste" value="general" class="input-radio" checked/>General</label>
+                    <label><input type="radio" name="caste" value="sc" class="input-radio"/>SC</label>
+                    <label><input type="radio" name="caste" value="st" class="input-radio"/>ST</label>
+                    <label><input type="radio" name="caste" value="obc" class="input-radio"/>OBC</label>
+                    <label><input type="radio" name="caste" value="mobc" class="input-radio"/>MOBC</label>
+                    <label><input type="radio" name="caste" value="ews" class="input-radio"/>EWS</label>
+                </div>
+                
+                <div class="form-group">
+                    <p>Is reservation in India a good thing? <span>(You can select multiple)</span></p>
+                    <label><input type="checkbox" name="values" value="yes" class="input-checkbox">Absolutely Yes.</label>
+                    <label><input type="checkbox" name="values" value="yes-but-need-changes" class="input-checkbox">Yes, but with changes.</label>
+                    <label><input type="checkbox" name="values" value="yes-but-economic" class="input-checkbox">Yes, but only on economic conditions.</label>
+                    <label><input type="checkbox" name="values" value="yes-but-on-discrimination" class="input-checkbox">Yes, but only on social discrimination.</label>
+                    <label><input type="checkbox" name="values" value="no-benefit" class="input-checkbox">No, because i am being discriminated due to reservation.</label>
+                    <label><input type="checkbox" name="values" value="no" class="input-checkbox">Absolutely Not.</label>
+                </div>
+                
+                <div class="form-group">
+                    <p>Is reservation in India a social justice phenomenon?</p>
+                    <label><input type="radio" name="opinion" value="yes" class="input-radio" checked/>Yes</label>
+                    <label><input type="radio" name="opinion" value="no" class="input-radio"/>No</label>
+                    <label><input type="radio" name="opinion" value="maybe" class="input-radio"/>MayBe</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Is the purpose of reservation being fulfilled?</p>
+                    <label><input type="radio" name="purpose" value="yes" class="input-radio" checked/>Yes</label>
+                    <label><input type="radio" name="purpose" value="no" class="input-radio"/>No</label>
+                    <label><input type="radio" name="purpose" value="dontknow" class="input-radio"/>Don't Know</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Your thoughts on reservation in the context of Indian Society:</p>
+                    <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your thoughts here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button" value="submit">Submit</button>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+    </body>
+</html>
