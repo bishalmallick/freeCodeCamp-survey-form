@@ -182,3 +182,7 @@ form {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.footer__text{
+  text-align: center;
+}
